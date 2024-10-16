@@ -18,10 +18,6 @@
 - Add hardcoded values to the constant files
 - register TMDB API & create an app & get access token
 - Get data from TMDB now playing movie list API
-# Bug Fix
-  - Sign up user displayName and Profile picture update
-  - if the user not logged in then redirect to login and vise versa
-  - unsubscribed to the onAuthStateChanged callback
 - get data from TMDB now playing list API
 - custom hook for Now Playing Movies
 - Create movieSlice
@@ -32,6 +28,13 @@
 - embedded the you tube video and make it autoplay and mute
 - added tailwind classes for UI
 - custom hooks
+
+
+# Bug Fix
+  - Sign up user displayName and Profile picture update
+  - if the user not logged in then redirect to login and vise versa
+  - unsubscribed to the onAuthStateChanged callback
+
 
 # Features
 - Login/Signup
