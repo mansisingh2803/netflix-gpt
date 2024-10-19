@@ -28,7 +28,16 @@
 - embedded the you tube video and make it autoplay and mute
 - added tailwind classes for UI
 - custom hooks
-
+- Build Secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- Made the browse page amazing with Tailwind CSS
+- usePopular, useTrending, useTopRated custom hooks
+- GPT Search feature
+- GPT Searchbar
+- Multi-Language Feature in our app(*)
+- Integrate GPT APIs
 
 # Bug Fix
   - Sign up user displayName and Profile picture update
