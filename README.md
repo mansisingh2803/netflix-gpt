@@ -38,6 +38,13 @@
 - GPT Searchbar
 - Multi-Language Feature in our app(*)
 - Integrate GPT APIs
+- GPT search API call
+- fetched gptMoviesSuggestion
+- gptSlice
+- Reused MovieList component
+- Memoisation
+- .env file
+- Adding env file in gitignore
 
 # Bug Fix
   - Sign up user displayName and Profile picture update

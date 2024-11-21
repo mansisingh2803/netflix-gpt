@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { API_OPTIONS } from '../utils/constants';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addNowPlayingMovies } from "../utils/moviesSlice";
 
 const useNowPlayingMovies = () => {
-
+    const nowPlayingMovies = useSelector((store) => store.movies.nowPlayingMovies);
     // fetch data from TMDB API and updating store
     const dispatch = useDispatch();
     const getNowPlayingMovies = async () => {
@@ -13,14 +13,14 @@ const useNowPlayingMovies = () => {
             API_OPTIONS
         );
         const json = await data.json();
-        // console.log(json.results);
+        //console.log(json.results);
 
         dispatch(addNowPlayingMovies(json.results));
     };
 
     useEffect(() => {
-        getNowPlayingMovies();
-    }, [])
-}
+        !nowPlayingMovies && getNowPlayingMovies();
+    }, []);
+};
 
 export default useNowPlayingMovies;
